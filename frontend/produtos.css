@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Roboto Slab', 'serif';
+    background-image:url(/public/black1.jpg);
+    background-size: cover; /* Cobre toda a tela */
+    background-position: right; /* Posiciona a imagem à direita */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 100vh; /* Garante que a imagem ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background-color: #0d0d0d57;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.header nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.produtos-subtitulo {
+    margin-top: 33px;
+    color: #ccc;
+    padding: 7px 7px 7px 7px;
+}
+
+.nome{
+    color: #ccc;
+
+}
+
+.quantidade {
+    color: #ccc;
+}
+
+.preco {
+    color: #ccc;
+}
+
+.categoria {
+    color: #ccc;
+}
+
+/* Form Section */
+.form-section {
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-section h2 {
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d0d0d44; /* Fundo preto semi-transparente */
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .form-section {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+

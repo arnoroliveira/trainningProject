@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-image: url(/public/black1.jpg);
+    background-size: cover;
+    font-family: 'Roboto Slab', 'serif';
+    color: #333;
+}
+
+.header {
+    background-color: #0d0d0d57;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza todo o conteúdo */
+    align-items: center;
+    gap: 20px; /* Espaçamento entre itens */
+    flex-wrap: nowrap; /* Previne quebra de linha em telas grandes */
+    padding: 0;
+    margin: 0;
+}
+
+
+.header nav li {
+    display: inline-block; /* Garante que cada palavra fique em uma linha apenas */
+    text-align: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-weight: bold;
+    padding: 5px 10px; /* Adiciona espaço ao redor do texto */
+    transition: all 0.3s ease;
+}
+
+.report-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center; /* Centraliza para tela menores */
+}
+
+.report-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: rgba(4, 0, 255, 0.822);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#generate-report {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#generate-report:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d0d0d44; /* Fundo preto semi-transparente */
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Responsividade a partir de 400px */
+
+@media (max-width: 430px) {
+    .header ul {
+        flex-direction: column; /* Itens empilhados */
+        align-items: center; /* Centraliza os itens */
+        gap: 10px;
+    }
+
+    .header nav li {
+        width: 100%; /* O menu ocupa toda a largura */
+        margin: 5px 0; /* Distância entre itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .header a {
+        width: 100%; /* Links ajustados para largura total */
+        display: block; /* Link ocupa uma linha inteira */
+        padding: 10px 0; /* Aumenta a área de toque */
+    }
+}
+
+    .report-section {
+        width: 90%; /* Ajuste para telas menores */
+    }
+
+    table th, table td {
+        font-size: 0.9em; /* Texto menor em telas menores */
+        padding: 8px;
+    }
+
+    #generate-report {
+        width: 100%;
+        font-size: 0.9em; /* Botão menor em telas pequenas */
+    }
+
+
+

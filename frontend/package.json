@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build required for static files'",
+    "vercel-build": "echo 'No build required for static files'"
+  },
+  "dependencies": {}
+}
+
+
+
+  

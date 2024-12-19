@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="relatorios.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categorias.html">Cadastro de Categorias</a></li>
+                <li><a href="produtos.html">Cadastro de Produtos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="report-section">
+            <h2>Relatórios</h2>
+            <table id="report-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados dos produtos devem ser adicionados aqui -->
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>10</td>
+                        <td>R$ 15,00</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Produto 2</td>
+                        <td>5</td>
+                        <td>R$ 20,00</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Produto 3</td>
+                        <td>8</td>
+                        <td>R$ 12,00</td>
+                        <td>R$ 96,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="generate-report">Gerar Relatório</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
