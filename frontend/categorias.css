@@ -16,9 +16,9 @@ body {
     font-family: 'Roboto Slab', 'serif';
     background-image:url(/public/black1.jpg);
     background-size: cover; /* Cobre toda a tela */
-    background-position: right; /* Posiciona a imagem à direita */
+    background-position: right; /* imagem à direita */
     background-repeat: no-repeat; /* Não repete a imagem */
-    height: 100vh; /* Garante que a imagem ocupe toda a altura da tela */
+    height: 100vh; /* Não deixa ocupar imagem toda a altura da tela */
     display: flex;
     flex-direction: column;
     justify-content: normal;
